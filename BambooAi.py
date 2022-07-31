@@ -4,27 +4,6 @@ import openai
 import argparse
 
 
-def main():
-    print(generate_branding_snippet("coffee"))
-
-    # print("running copy kitt")
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", "-i", type=str, required=True)
-    args  = parser.parse_args()
-
-    user_input=args.input
-
-    print(f"User input: {user_input}")
-
-    snippet_result = generate_branding_snippet(user_input)
-
-    keywords_result = generate_keywords(user_input)
-
-    # print(snippet_result)
-    print(keywords_result)
-
-
 def generate_branding_snippet(prompt: str) -> str:
     # open ai api
     openai.api_key = "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"
@@ -48,7 +27,7 @@ def generate_branding_snippet(prompt: str) -> str:
 
 def generate_keywords(prompt: str) -> list[str]:
     # open ai api
-    openai.api_key = "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"
+    openai.api_key = "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"
 
     enriched_prompt = f"Generate related branding keywords for {prompt}"
 
@@ -70,5 +49,3 @@ def validate_length(prompt: str) -> bool:
     return len(prompt) <= 12
 
 
-if __name__ == "__main__":
-    main()
