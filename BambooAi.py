@@ -27,7 +27,7 @@ def main():
 
 def generate_branding_snippet(prompt: str) -> str:
     # open ai api
-    openai.api_key = "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"
+    openai.api_key = "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"
 
     enriched_prompt = f"Generate upbeat branding snippet for {prompt}"
 
