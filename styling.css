@@ -87,8 +87,9 @@
     padding: 10px;
 }
 
-.Button:hover {
+.Button:hover, .Button:active {
     background-color: rgb(219, 219, 191);
+    
 }
 
 .input-area {
