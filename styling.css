@@ -45,6 +45,9 @@
     height: 180px;
     color: white;
     font-family: monospace;
+    display: block;
+    word-wrap: break-word;
+
     
 }
 
