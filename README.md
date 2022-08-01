@@ -10,7 +10,7 @@ https://ai-branding.vercel.app/
 | --------- | ------------------------------------------------------------ |
 | Language  | [Python](https://www.python.org/)                            |
 | Framework | [FastAPI](https://fastapi.tiangolo.com/)                     |
-| Hosting   | [Heroku]                                                     |
+| Hosting   | [Heroku](https://www.heroku.com/)                            |
 | Other     | [OpenAI](https://openai.com/)                                |
 
 #### Frontend Stack
