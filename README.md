@@ -1,41 +1,32 @@
-# Crypto-Technical-Analysis-Trading-Bot
-A bot that calculates the RSI and MACD momentum indicators of any crypto coin on binance and automatically purchases based off the indicators. The bot sends a text message to the users cell phone when a transaction is made. 
+# Artificial intelligence Branding Assistant  
+A web application that provides user with AI generated slogans and keywords to use for their buisness 
+https://ai-branding.vercel.app/
 
 ## About  
-Being a long time follower of financial markets such as the stock market and the crypto market, I wanted a way to trade on the market without having to always do the analysis, purchases, and selling while I am busy. This project was created to do all that work in the background for the user, and sends the user updates to their cell phone through SMS as soon as a transaction is made. 
 
-The bot uses two momentum indicators:
+#### Backend Stack
 
-1. Relative Strength Index ([RSI](https://www.investopedia.com/terms/r/rsi.asp))
-  - Bot default Buying Condition: RSI < 30
-  - Bot default Selling Condition: RSI > 70
+| Type      | Tech                                                         |
+| --------- | ------------------------------------------------------------ |
+| Language  | [Python](https://www.python.org/)                            |
+| Framework | [FastAPI](https://fastapi.tiangolo.com/)                     |
+| Hosting   | [Heroku]                                                     |
+| Other     | [OpenAI](https://openai.com/)                                |
 
-2. Average Convergence/Divergence ([MACD](https://www.investopedia.com/terms/m/macd.asp))
-  - Bot default Buying Condition: MACD > 0
-  - Bot default Selling Condition:  MACD < 0 
-  
-**Defualt Conditions**
+#### Frontend Stack
 
-    When both RSI and MACD buying conditions are met, the bot will buy. 
+| Type      | Tech                                                         |
+| --------- | ------------------------------------------------------------ |
+| Language  | [Javascript](https://www.typescriptlang.org/)                |
+| Styling   | [TailwindCSS](https://tailwindcss.com/)                      |
+| Hosting   | [Vercel](https://vercel.com)                                 |
 
-    When both RSI and MACD selling conditions are met, the bot will sell. 
-
-**Results**
-
-   Through backtesting 2021 ETH USD data, this bot would have given a return of ~6.54% in 2021. 
 
 ## Author & Date 
 - Author: [@hadisrour6](https://www.github.com/hadisrour6)
 - Version: 1.0.0 
-- Date: May 4, 2022 
+- Date: August 1, 2022 
 
-## Technical Documentation   
 
-**To use the bot locally**
-  1. Install Python 3.7 or above. Install Python [here](https://www.python.org/).  
 
-  2. Run ```pip install -r requirements.txt``` to install all dependencies.
 
-  3. Edit all the API crededentials in ```config.py``` to your unique keys. You can get all the keys and numbers from the twilio and binance website after creating        accounts.
- 
-  4. Run the bot with  ```python CryptoBot.py```
