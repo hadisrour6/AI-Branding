@@ -1,6 +1,6 @@
 from re import S
 from fastapi import FastAPI, HTTPException
-from BambooAi import generate_branding_snippet, generate_keywords, validate_length
+from BambooAi import generate_branding_snippet, generate_keywords
 
 app = FastAPI()
 
@@ -19,9 +19,9 @@ async def generate_keywords_api(prompt: str):
 
 
 def validate_input_length(prompt: str):
-    if len(prompt) >= 12:
+    if len(prompt) >= 24:
         raise HTTPException(
-            status_code=400, detail="input length is too long, must be under 12 characters")
+            status_code=400, detail="input length is too long, must be under 24 characters")
     pass
 
-# uvicorn copykitt_api:app --reload
+
