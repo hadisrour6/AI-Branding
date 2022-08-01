@@ -1,7 +1,5 @@
-import os
 import re
 import openai
-import argparse
 
 
 def generate_branding_snippet(prompt: str) -> str:
@@ -10,7 +8,7 @@ def generate_branding_snippet(prompt: str) -> str:
 
     enriched_prompt = f"Generate upbeat branding snippet for {prompt}"
 
-    response = openai.Completion.create(engine="davinci-instruct-beta-v3", prompt=enriched_prompt, max_tokens=40)
+    response = openai.Completion.create(engine="davinci-instruct-beta-v3", prompt=enriched_prompt, max_tokens=25)
 
     # extracts the text
     text = response["choices"][0]["text"]
@@ -31,7 +29,7 @@ def generate_keywords(prompt: str) -> list[str]:
 
     enriched_prompt = f"Generate related branding keywords for {prompt}"
 
-    response = openai.Completion.create(engine="davinci-instruct-beta-v3", prompt=enriched_prompt, max_tokens=40)
+    response = openai.Completion.create(engine="davinci-instruct-beta-v3", prompt=enriched_prompt, max_tokens=25)
 
     # extracts the text
     keywords_text = response["choices"][0]["text"]
@@ -43,9 +41,5 @@ def generate_keywords(prompt: str) -> list[str]:
     keywords_array = [k for k in keywords_array if len(k) > 0]
 
     return keywords_array
-
-
-def validate_length(prompt: str) -> bool:
-    return len(prompt) <= 12
 
 
