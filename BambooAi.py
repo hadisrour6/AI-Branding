@@ -8,7 +8,7 @@ def generate_branding_snippet(prompt: str) -> str:
 
     enriched_prompt = f"Generate upbeat branding snippet for {prompt}"
 
-    response = openai.Completion.create(engine="davinci-instruct-beta-v3", prompt=enriched_prompt, max_tokens=25)
+    response = openai.Completion.create(engine="davinci-instruct-beta-v3", prompt=enriched_prompt, max_tokens=32)
 
     # extracts the text
     text = response["choices"][0]["text"]
@@ -29,7 +29,7 @@ def generate_keywords(prompt: str) -> list[str]:
 
     enriched_prompt = f"Generate related branding keywords for {prompt}"
 
-    response = openai.Completion.create(engine="davinci-instruct-beta-v3", prompt=enriched_prompt, max_tokens=25)
+    response = openai.Completion.create(engine="davinci-instruct-beta-v3", prompt=enriched_prompt, max_tokens=32)
 
     # extracts the text
     keywords_text = response["choices"][0]["text"]
