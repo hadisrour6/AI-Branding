@@ -42,5 +42,17 @@ def generate_keywords(prompt: str) -> list[str]:
 
     return keywords_array
 
+def snippet_and_slogan():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", "-i", type=str, required=True)
+    args  = parser.parse_args()
 
+    user_input=args.input
+
+    print(f"User input: {user_input}")
+
+    snippet_result = generate_branding_snippet(user_input)
+    keywords_result = generate_keywords(user_input)
+    
+    return f"Slogan: {snippet_result}. Kewords: {keywords_result}"
 
