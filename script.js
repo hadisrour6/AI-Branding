@@ -7,7 +7,6 @@ const generate = document.getElementById('generate');
 
 myText.addEventListener("input", () => {
     let count = (myText.value).length;
-    console.log(myText.value, count);
     document.getElementById("count-result").
         textContent = `${count}/24`;
 })
