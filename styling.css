@@ -1,14 +1,22 @@
+.mainBody {
+    background-color: rgb(72, 100, 134);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+}
+
 .Body1 {
     border-radius: 25px;
     background-color: #00203FFF;
     color: white;
     width: 300px;
-    height: 400px;
+    height: 450px;
     padding: 10px;
     border: 3px solid black;
-    position: absolute;
-    left: 350px;
-    top: 100px;
+    text-align: center;
+    margin-right: 20px;
 }
 
 .Body2 {
@@ -16,31 +24,30 @@
     background-color: #00203FFF;
     color: white;
     width: 300px;
-    height: 400px;
+    height: 450px;
     padding: 10px;
     border: 3px solid black;
-    position: absolute;
-    left: 800px;
-    top: 100px;
     text-align: center;
 }
 
 .sloganSpan {
+    font-size: large;
     position: relative;
     border-radius: 6px;
     top: 5px;
     background-color: rgb(72, 100, 134);
-    height: 100px;
+    height: 150px;
     color: white;
     font-family: monospace;
 }
 
 .keywordsSpan {
+    font-size: large;
     border-radius: 6px;
     position: relative;
     top: 30px;
     background-color: rgb(72, 100, 134);
-    height: 180px;
+    height: 150px;
     color: white;
     font-family: monospace;
     word-wrap: break-word;
@@ -49,12 +56,6 @@
 .Keywords {
     position: relative;
     top: 15px;
-}
-
-.mainBody {
-    background-color: rgb(72, 100, 134);
-    width: 360px;
-    height: 340px;
 }
 
 .Title {
@@ -68,8 +69,7 @@
 
 .logo {
     position: relative;
-    left: 25px;
-    bottom: 20px;
+    bottom: 15px;
 }
 
 ::placeholder {
@@ -79,16 +79,14 @@
 
 .Button {
     border-radius: 25px;
+    height: 60px;
+    width: 290px;
     position: relative;
-    bottom: 25px;
-    left: 6px;
-    height: 50px;
-    width: 90%;
-    padding: 10px;
+    bottom: 10px;
 }
 
 .Button:hover {
-    background-color: rgb(219, 219, 191);  
+    background-color: rgb(219, 219, 191);
 }
 
 .input-area {
@@ -96,9 +94,9 @@
     position: relative;
     color: white;
     bottom: 20px;
-    left: 17px;
+    right: 40px;
     width: 200px;
-    height: 50px;
+    height: 63px;
     resize: none;
     background-color: rgb(72, 100, 134);
 }
@@ -106,8 +104,14 @@
 .counter {
     font-family: monospace;
     font-size: 15px;
-    position: relative;
-    bottom: 60px;
-    left: 245px;
     color: rgb(177, 176, 176);
+    position: relative;
+    bottom: 70px;
+    left: 110px;
+}
+
+.icons {
+    position: relative;
+    top: 60px;
+    margin-right: 20px;
 }
