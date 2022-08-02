@@ -43,4 +43,4 @@ def generate_keywords(prompt: str) -> list[str]:
     return keywords_array
 
 
-print(generate_keywords("penis"))
+
