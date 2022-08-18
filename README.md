@@ -18,7 +18,7 @@ https://ai-branding.vercel.app/
 
 | Type      | Tech                                                         |
 | --------- | ------------------------------------------------------------ |
-| Language  | [Javascript](https://www.typescriptlang.org/)                |
+| Language  | [Javascript](https://www.javascript.com/)                |
 | Styling   | [TailwindCSS](https://tailwindcss.com/)                      |
 | Hosting   | [Vercel](https://vercel.com)                                 |
 
