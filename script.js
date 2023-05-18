@@ -14,9 +14,9 @@ myText.addEventListener("input", () => {
 
 async function generateAI() {
     input = inputEl.value;
-
-    let KeywordURL = "https://bamboo-ai.herokuapp.com/generate_keywords?prompt= " + input;
-    let sloganURL = "https://bamboo-ai.herokuapp.com/generate_snippet?prompt= " + input;
+    https://bamboo-ai-test.herokuapp.com/
+    let KeywordURL = "https://bamboo-ai-test.herokuapp.com/generate_keywords?prompt= " + input;
+    let sloganURL = "https://bamboo-ai-test.herokuapp.com/generate_snippet?prompt= " + input;
 
     const responseKey = await fetch(KeywordURL);
     const dataKey = await responseKey.json();
