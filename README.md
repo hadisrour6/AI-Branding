@@ -1,7 +1,7 @@
 # Bamboo AI
 ### Artificial intelligence Branding Assistant  
-A web application that provides user with AI generated slogans and keywords to use for their buisness 
-https://ai-branding.vercel.app/
+A web application that provides user with AI generated slogans and keywords to use for their business.
+Check it out here: https://ai-branding.vercel.app/
 
 ## About  
 
