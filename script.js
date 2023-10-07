@@ -26,7 +26,7 @@ async function generateAI() {
 
 
     slogan.innerText = dataSlogan.snippet;
-    keywords.innerText = dataKey.Keywords;
+    keywords.innerText = dataKey.keywords;
 }
 
 
