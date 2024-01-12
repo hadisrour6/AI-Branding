@@ -14,7 +14,6 @@ myText.addEventListener("input", () => {
 
 async function generateAI() {
     input = inputEl.value;
-    https://bambooai-ec571d30a6c2.herokuapp.com/
     let KeywordURL = "https://bambooai-ec571d30a6c2.herokuapp.com/generate_keywords?prompt=" + input;
     let sloganURL = "https://bambooai-ec571d30a6c2.herokuapp.com/generate_snippet?prompt=" + input;
 
